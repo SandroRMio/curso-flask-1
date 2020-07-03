@@ -14,4 +14,4 @@ clean:
 install:
 	pip install -e .['dev']
 test:
-	pytest test/ -v --cov=delivery
+	pytest tests/ -v --cov=delivery
