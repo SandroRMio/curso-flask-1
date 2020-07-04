@@ -1,7 +1,7 @@
 black
 flake8
 flask-debugtoolbar
-flask-shell-ipythons
+flask-shell-ipython
 ipdb
 ipython
 isort
