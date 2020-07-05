@@ -1,10 +1,8 @@
 from flask import Flask
+from delivery.ext import site
 
 
 def create_app():
     app = Flask(__name__)
-
-    @app.route("/")
-    def index():
-        return "Hello Sandro"
+    site.init_app(app)
     return app
