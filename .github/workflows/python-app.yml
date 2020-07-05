@@ -9,9 +9,9 @@ defaults:
     
 on:
   push:
-    branches: [ master ]
+    branches: [ urubu ]
   pull_request:
-    branches: [ master ]
+    branches: [ urubu ]
 
 jobs:
   build:
