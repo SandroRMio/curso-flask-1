@@ -1,4 +1,4 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% import "macros/list_item.html" as list_item %}
 
 {% block top %}
@@ -18,6 +18,8 @@
 
 {% block main %}
 <div class="columns">
-    {list_item.cards([1,2,3,4])}
+  {{list_item.cards([1,2,3,4])}}
 </div>
-{% endblock main %}
+{% endblock %}
+
+
