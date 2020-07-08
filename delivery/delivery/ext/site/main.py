@@ -10,13 +10,13 @@ def index():
     return render_template("index.html")
 
 
-@bp.route("/sobre")
+@bp.route("/conheca")
 def about():
 
     return render_template("about.html")
 
 
-@bp.route("/restaurantes")
+@bp.route("/restauracao")
 def restaurants():
 
     return render_template("restaurants.html")

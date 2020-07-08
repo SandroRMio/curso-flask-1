@@ -14,10 +14,10 @@
     </div>
   </div>
 </section>
-{% endblock top %} 
+{% endblock %} 
 
 {% block main %}
 <div class="columns">
-    {list_item.cards([1,2,3,4])}
+    {{list_item.cards([1,2,3,4],)}}
 </div>
 {% endblock main %}
