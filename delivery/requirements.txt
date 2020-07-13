@@ -1,2 +1,3 @@
 #vai sendo add algo aqui
 flask
+flask-sqlalchemy
