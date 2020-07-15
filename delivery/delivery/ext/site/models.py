@@ -62,7 +62,7 @@ class Items(db.Model):
     __tablename__ = "items"
     id = db.Column("id", db.Integer, primary_key=True)
     name = db.Column("name", db.Unicode)
-    image = deferred(Column("image", db.LargeBinary))
+    image = db.Column("image", db.LargeBinary)
     price = db.Column("price", db.Numeric)
     available = db.Column("available", db.Boolean)
     store_id = db.Column("store_id", db.Integer, db.ForeignKey("store.id"))
