@@ -7,7 +7,8 @@ bp = Blueprint("site", __name__)
 
 @bp.route("/")
 def index():
-    current_app.logger.debug("tretpreutertiert")
+    print("entrei na função main")
+    current_app.logger.debug("entrei na função main")
     return render_template("index.html")
 
 
