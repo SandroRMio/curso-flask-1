@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# BD
+/home/sandrormio/curso-flask/delivery/delivery/del_foods.db
