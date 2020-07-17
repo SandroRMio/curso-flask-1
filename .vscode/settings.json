@@ -1,3 +1,12 @@
 {
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "sqltools.connections": [
+        {
+            "database": "${workspaceFolder:curso-flask}/delivery/delivery/del_foods.db",
+            "driver": "SQLite",
+            "name": "DELIVERY",
+            "previewLimit": 50
+        }
+    ],
+    "sqltools.useNodeRuntime": true
 }
