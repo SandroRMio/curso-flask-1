@@ -1,10 +1,11 @@
 # -*- encoding: utf-8 -*-
 
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+# from flask import Flask
+# from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
-db = SQLAlchemy(app)
+# app = Flask(__name__)
+# db = SQLAlchemy(app)
+from delivery.ext.db import db
 
 
 class User(db.Model):
@@ -13,6 +14,7 @@ class User(db.Model):
     email = db.Column("email", db.Unicode)
     passwd = db.Column("passwd", db.Unicode)
     admin = db.Column("admin", db.Boolean)
+    nome = db.Column("nome", db.Unicode)
 
 
 class Address(db.Model):

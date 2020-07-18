@@ -1,3 +1,4 @@
 #vai sendo add algo aqui
 flask
 flask-sqlalchemy
+flask-migrate
