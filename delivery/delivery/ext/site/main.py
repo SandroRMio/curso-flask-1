@@ -7,16 +7,16 @@ bp = Blueprint("site", __name__)
 
 @bp.route("/")
 def index():
-    print("entrei na função main")
-    current_app.logger.debug("entrei na função main")
+    print("entrei na funcao main")
+    current_app.logger.debug("Entrei na funcao main")
     return render_template("index.html")
 
 
-@bp.route("/conheca")
+@bp.route("/sobre")
 def about():
     return render_template("about.html")
 
 
-@bp.route("/restauracao")
+@bp.route("/restaurantes")
 def restaurants():
     return render_template("restaurants.html")

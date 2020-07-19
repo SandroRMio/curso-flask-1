@@ -16,4 +16,5 @@ def create_app():
     cli.init_app(app)
     toolbar.init_app(app)
     site.init_app(app)
+    hooks.init_app(app)
     return app
