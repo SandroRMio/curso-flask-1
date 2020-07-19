@@ -1,6 +1,6 @@
+# -*- encoding: utf-8 -*-
 import click
-from delivery.ext.db import db
-from delivery.ext.site import models
+from delivery.ext.db import models
 
 
 def init_app(app):
@@ -116,3 +116,14 @@ def init_app(app):
     @app.cli.command()
     def listar_usuarios():
         click.echo("lista dos usuarios")
+
+
+
+
+
+
+
+
+
+
+
