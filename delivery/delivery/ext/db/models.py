@@ -43,8 +43,7 @@ class Order(db.Model):
     completed = db.Column("completed", db.Boolean)
     user_id = db.Column("user_id", db.Integer, db.ForeignKey("user.id"))
     store_id = db.Column("store_id", db.Integer, db.ForeignKey("store.id"))
-    address_id = db.Column(
-        "address_id", db.Integer, db.ForeignKey("address.id")
+    address_id = db.Column("address_id", db.Integer, db.ForeignKey("address.id")
     )
 
     user = db.relationship("User", foreign_keys=user_id)
