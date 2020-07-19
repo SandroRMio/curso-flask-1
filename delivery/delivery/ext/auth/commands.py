@@ -1,7 +1,6 @@
 import click
-
-from delivery.ext.auth.models import User
 from delivery.ext.db import db
+from delivery.ext.auth.models import User
 
 
 def list_users():
@@ -19,3 +18,8 @@ def add_user(email, passwd, admin):
     db.session.commit()
 
     click.echo(f"Usuário {email} criado com sucesso!")
+
+
+def listar_usuarios():
+    users = User.query.all()
+    click.echo("lista dos usuarios {users}")
