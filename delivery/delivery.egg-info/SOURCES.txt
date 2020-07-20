@@ -18,9 +18,10 @@ delivery/ext/auth/models.py
 delivery/ext/cli/__init__.py
 delivery/ext/config/__init__.py
 delivery/ext/db/__init__.py
-delivery/ext/db/commands.py
+delivery/ext/db/_commands.py
 delivery/ext/db/models.py
 delivery/ext/site/__init__.py
 delivery/ext/site/controllers.py
 delivery/ext/site/main.py
 delivery/ext/toolbar/__init__.py
+delivery/ext/toolbar/hooks.py

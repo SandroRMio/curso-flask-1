@@ -10,7 +10,7 @@ class UserAdmin(ModelView):
     """Interface admin de user"""
 
     # def format_user(self, request, user, *args):
-    #     return user.email.split("@")[0]
+    #    return user.email.split("@")[0]
     # column_formatters = {
     #     "email": format_user
     # }
@@ -19,8 +19,10 @@ class UserAdmin(ModelView):
         "email": lambda s, r, u, *a: Markup(f'<b>{u.email.split("@")[0]}</b>')
     }
 
-    column_list = ["admin", "email"]
-
+    column_list = ["email", "admin"]
+    can_edit = False
+    can_create = True
+    can_delete = True
     column_labels = {"email": "User login"}
 
     column_searchable_list = ["email"]
@@ -37,7 +39,11 @@ class UserAdmin(ModelView):
     can_create = True
     can_delete = True
 
-    @action("toggle_admin", "Toggle admin status", "Are you sure?")
+    @action(
+        'toggle_admin',
+        'Toggle admin status',
+        'Are you sure?'
+    )
     def toggle_admin_status(self, ids):
         users = User.query.filter(User.id.in_(ids))
         for user in users.all():
