@@ -5,6 +5,8 @@ from flask_admin.contrib.sqla import ModelView, filters
 from delivery.ext.auth.models import User
 from delivery.ext.db import db
 
+# TODO descreve todos os models
+
 
 class UserAdmin(ModelView):
     """Interface admin de user"""
@@ -13,6 +15,7 @@ class UserAdmin(ModelView):
     #    return user.email.split("@")[0]
     # column_formatters = {
     #     "email": format_user
+    # igual a fç column_formatters
     # }
 
     column_formatters = {
