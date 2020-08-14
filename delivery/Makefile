@@ -27,6 +27,6 @@ format:
 	black -l 79 **/*.py
 
 run:
-	FLASK_APP=delivery/app.py
-	FLASK_ENV=development flask run	
+	export FLASK_APP=delivery/app.py
+	export FLASK_ENV=development flask run	
 
