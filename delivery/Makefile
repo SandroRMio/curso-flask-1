@@ -30,7 +30,3 @@ run:
 	FLASK_APP=delivery/app.py
 	FLASK_ENV=development flask run	
 
-start:
-	source /home/sandrormio/curso-flask/.venv/bin/activate
-	eval "$(starship init zsh)"  
-	cd delivery	
