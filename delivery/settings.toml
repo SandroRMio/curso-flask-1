@@ -1,0 +1,17 @@
+[default]
+DEBUG = false
+FLASK_ADMIN_SWATCH = "cerulean"
+
+[development]
+DEBUG = true
+SECRET_KEY = '\xcc\x06\x85!\xd4\xbf\xe5\xd0\x92\xbf3l.\xe5\xce\x97'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///del_foods.db'
+SQLALCHEMY_TRACK_MODIFICTIONS = false
+DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
+DEBUG_TB_PROFILER_ENABLED = true 
+DEBtG_TB_INTERCEPT_REDIRECTS = false
+
+[production]
+SQLALCHEMY_TRACK_MODIFICTIONS = false
+SQLALCHEMY_DATABASE_URI = "mysql://......"
+
