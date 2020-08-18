@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: oso
+Version: 0.4.0
+Summary: oso authorization library.
+Home-page: UNKNOWN
+Author: Oso Security, Inc.
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cffi (==1.14.0)
+Requires-Dist: dataclasses ; python_version < "3.7"
+Provides-Extra: django
+Provides-Extra: flask
+Requires-Dist: flask ; extra == 'flask'
+Requires-Dist: authlib ; extra == 'flask'
+Provides-Extra: jwt
+Requires-Dist: authlib ; extra == 'jwt'
+
+UNKNOWN
+
+
