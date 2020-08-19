@@ -8,7 +8,7 @@ admin = Admin()
 
 
 def init_app(app):
-    admin.name = app.config.get("ADMIN_NAME", "del_foods") 
+    admin.name = app.config.get("ADMIN_NAME", "del_foods")
     admin.template_mode = app.config.get("ADMIN_TEMPLATE_MODE", "bootstrap2")
     admin.init_app(app)
 
