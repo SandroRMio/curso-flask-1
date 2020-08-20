@@ -13,7 +13,6 @@ EXTENSIONS = [
 
 [development]
 DEBUG = true
-
 SQLALCHEMY_DATABASE_URI = 'sqlite///del_foods.db'
 SQLALCHEMY_TRACK_MODIFICTIONS = false
 DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
@@ -26,8 +25,7 @@ EXTENSIONS = [
     "delivery.ext.cli:init_app",
     "delivery.ext.toolbar:init_app", 
     "delivery.ext.site:init_app",
-    "delivery.ext.hooks:init_app",
-]
+ADMIN_NAME = "del_foods"
 
 
 [production]

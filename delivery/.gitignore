@@ -131,4 +131,4 @@ dmypy.json
 # BD
 /home/sandrormio/curso-flask/delivery/delivery/del_foods.db
 
-*/**.secrets.*
+delivery/.secrets.toml
