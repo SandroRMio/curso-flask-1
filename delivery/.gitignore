@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 # BD
-/home/sandrormio/curso-flask/delivery/delivery/del_foods.db
+delivery/delivery/del_foods.db
 
 delivery/.secrets.toml
