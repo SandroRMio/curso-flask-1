@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+
+{% block top %}
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Cadastre se no melhor site de delivery
+      </h1>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block main %}
+
+<form class='user-form' action='{{url_for("site.signup")}}' method='post' enctype='multipart/form-data'>
+
+    {{form.email.label}}<br>
+    {{form.email.(size=20)}}<br>
+    
+    {{form.password.label}}<br>
+    {{form.password(size=20)}}<br>
+
+    {{form.foto.label}}<br>
+    {{foto.foto}}<br>
+
+    <input type='submit' value='enviar'/> 
+</form>
+{%ndbloc

@@ -1,6 +1,7 @@
 from flask import render_template
 from flask import Blueprint
 from flask import current_app
+from delivery.ext.auth.form import UserForm
 
 bp = Blueprint("site", __name__)
 
@@ -16,6 +17,10 @@ def index():
 def about():
     return render_template("about.html")
 
+@bp.route("/cadastro")
+def signup():
+    form = UserForm()
+    return render_template("restaurants.html", form=form)
 
 @bp.route("/restaurantes")
 def restaurants():
