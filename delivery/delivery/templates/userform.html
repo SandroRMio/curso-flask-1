@@ -14,17 +14,19 @@
 
 {% block main %}
 
-<form class='user-form' action='{{url_for("site.signup")}}' method='post' enctype='multipart/form-data'>
+<form action='{{url_for("site.signup")}}' method='post' enctype='multipart/form-data'>
 
     {{form.email.label}}<br>
-    {{form.email.(size=20)}}<br>
+    {{form.email(size=20)}}<br>
     
     {{form.password.label}}<br>
     {{form.password(size=20)}}<br>
 
     {{form.foto.label}}<br>
-    {{foto.foto}}<br>
+    {{form.foto}}<br>
 
     <input type='submit' value='enviar'/> 
 </form>
-{%ndbloc
+
+
+{% endblock %}

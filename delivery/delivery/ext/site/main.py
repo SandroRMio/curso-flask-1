@@ -17,10 +17,12 @@ def index():
 def about():
     return render_template("about.html")
 
+
 @bp.route("/cadastro")
 def signup():
     form = UserForm()
-    return render_template("restaurants.html", form=form)
+    return render_template("userform.html", form=form)
+
 
 @bp.route("/restaurantes")
 def restaurants():

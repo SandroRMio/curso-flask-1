@@ -5,3 +5,4 @@ flask-migrate
 flask-admin
 flask-wtf
 dynaconf
+email_validator
