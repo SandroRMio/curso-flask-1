@@ -10,6 +10,7 @@ EXTENSIONS = [
     "delivery.ext.site:init_app",
     "delivery.ext.hooks:init_app",
 ]
+UPLOAD_FOLDER = "uploads"
 
 [development]
 DEBUG = true

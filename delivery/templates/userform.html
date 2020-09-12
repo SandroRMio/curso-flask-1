@@ -15,6 +15,8 @@
 {% block main %}
 
 <form action='{{url_for("site.signup")}}' method='post' enctype='multipart/form-data'>
+    {{form.csrf_token}}
+
 
     {{form.email.label}}<br>
     {{form.email(size=20)}}<br>
